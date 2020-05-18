@@ -1,0 +1,86 @@
+{
+    "Modules": {
+        "tb_aes": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "matrix_mult": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "aes_sbox": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_u0_obj": {
+            "out": "amcQw_u0_obj.o",
+            "mod": "...MASTER...",
+            "bytes": 7381,
+            "mode": 4,
+            "archive": "archive.0/_14680_archive_1.a"
+        },
+        "reYIK_u0_obj": {
+            "out": "reYIK_u0_obj.o",
+            "mod": "std",
+            "bytes": 35864,
+            "mode": 4,
+            "archive": "archive.0/_14680_archive_1.a"
+        },
+        "Ekjwg_u0_obj": {
+            "out": "Ekjwg_u0_obj.o",
+            "mod": "tb_aes",
+            "bytes": 82546,
+            "mode": 4,
+            "archive": "archive.0/_14680_archive_1.a"
+        },
+        "JNxBW_u0_obj": {
+            "out": "JNxBW_u0_obj.o",
+            "mod": "aes_sbox",
+            "bytes": 70240,
+            "mode": 4,
+            "archive": "archive.0/_14680_archive_1.a"
+        },
+        "Jn70n_u0_obj": {
+            "out": "Jn70n_u0_obj.o",
+            "mod": "matrix_mult",
+            "bytes": 21178,
+            "mode": 4,
+            "archive": "archive.0/_14680_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_14680_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_u0_obj.o",
+                    7381
+                ],
+                [
+                    "reYIK_u0_obj.o",
+                    35864
+                ],
+                [
+                    "JNxBW_u0_obj.o",
+                    70240
+                ],
+                [
+                    "Jn70n_u0_obj.o",
+                    21178
+                ],
+                [
+                    "Ekjwg_u0_obj.o",
+                    82546
+                ]
+            ],
+            "size": 217209
+        }
+    ]
+}

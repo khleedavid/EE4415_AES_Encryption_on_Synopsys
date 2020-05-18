@@ -1,0 +1,230 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file results.vpd}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1534
+gui_set_state_value -category Layout -key child_console_size_y -value 152
+gui_set_state_value -category Layout -key child_data_coltype -value 98
+gui_set_state_value -category Layout -key child_data_colvalue -value 136
+gui_set_state_value -category Layout -key child_data_colvariable -value 193
+gui_set_state_value -category Layout -key child_data_size_x -value 408
+gui_set_state_value -category Layout -key child_data_size_y -value 588
+gui_set_state_value -category Layout -key child_driver_size_x -value 1260
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 182
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 179
+gui_set_state_value -category Layout -key child_hier_size_y -value 588
+gui_set_state_value -category Layout -key child_hier_sort_order -value 1
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1540
+gui_set_state_value -category Layout -key child_schematic_size_y -value 537
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 950
+gui_set_state_value -category Layout -key child_source_size_y -value 583
+gui_set_state_value -category Layout -key child_wave_colname -value 211
+gui_set_state_value -category Layout -key child_wave_colvalue -value 230
+gui_set_state_value -category Layout -key child_wave_left -value 445
+gui_set_state_value -category Layout -key child_wave_right -value 1085
+gui_set_state_value -category Layout -key main_pos_x -value 8
+gui_set_state_value -category Layout -key main_pos_y -value 31
+gui_set_state_value -category Layout -key main_size_x -value 1542
+gui_set_state_value -category Layout -key main_size_y -value 870
+gui_set_state_value -category Layout -key stand_schematic_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_schematic_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_schematic_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_schematic_child_size_x -value 1028
+gui_set_state_value -category Layout -key stand_schematic_child_size_y -value 447
+gui_set_state_value -category Layout -key stand_schematic_top_pos_x -value 86
+gui_set_state_value -category Layout -key stand_schematic_top_pos_y -value 109
+gui_set_state_value -category Layout -key stand_schematic_top_size_x -value 1109
+gui_set_state_value -category Layout -key stand_schematic_top_size_y -value 684
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1540
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 736
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 0
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 23
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1535
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 863
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file results.vpd
+gui_list_select -id Data.1 -selected  { tb_aes.clk   }
+gui_list_select -id Data.1 -selected  { tb_aes.clk  tb_aes.start  tb_aes.rstn  {tb_aes.plain_text[1279:0]}  {tb_aes.cipher_key[1279:0]}  tb_aes.done  {tb_aes.completed_round[9:0]}  {tb_aes.cipher_text[1279:0]}  {tb_aes.count[31:0]}   }
+gui_list_select -id Data.1 -selected  { tb_aes.clk  tb_aes.start  tb_aes.rstn  {tb_aes.plain_text[1279:0]}  {tb_aes.cipher_key[1279:0]}  tb_aes.done  {tb_aes.completed_round[9:0]}  {tb_aes.cipher_text[1279:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { tb_aes.clk tb_aes.start tb_aes.rstn {tb_aes.plain_text[1279:0]} {tb_aes.cipher_key[1279:0]} tb_aes.done {tb_aes.completed_round[9:0]} {tb_aes.cipher_text[1279:0]} } -insertionbar
+gui_close_window -window TopLevel.2
+gui_list_select -id Hier.1 -current_item_name tb_aes -current_item_type Scope  -selected  {  }
+gui_list_select -id Hier.1 -current_item_name tb_aes -current_item_type Scope  -selected  { tb_aes   }
+gui_list_select -id Data.1 -selected  {  }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Hier.1 { tb_aes } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 355
+gui_list_sort -id  Wave.1   {Name}
+gui_list_sort -id  Wave.1   -descending  {Name}
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_list_sort -id  Wave.1   -by decl
+gui_list_sort -id  Wave.1   {Name}
+gui_list_sort -id  Wave.1   -descending  {Name}
+gui_list_sort -id  Wave.1   -by decl
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_close_window -window TopLevel.2
+gui_list_select -id Data.1 -selected  { tb_aes.clk   }
+gui_list_select -id Data.1 -selected  { tb_aes.clk  tb_aes.start  tb_aes.rstn  {tb_aes.plain_text[1279:0]}  {tb_aes.cipher_key[1279:0]}  tb_aes.done  {tb_aes.completed_round[9:0]}  {tb_aes.cipher_text[1279:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { tb_aes.clk tb_aes.start tb_aes.rstn {tb_aes.plain_text[1279:0]} {tb_aes.cipher_key[1279:0]} tb_aes.done {tb_aes.completed_round[9:0]} {tb_aes.cipher_text[1279:0]} } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 355
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 14998
+gui_marker_move -id  Wave.1 C1 16041
+gui_marker_move -id  Wave.1 C1 17500
+gui_marker_move -id  Wave.1 C1 18500
+gui_marker_move -id  Wave.1 C1 17998
+gui_marker_move -id  Wave.1 C1 7042
+gui_marker_move -id  Wave.1 C1 6500
+gui_marker_move -id  Wave.1 C1 13500
+gui_marker_move -id  Wave.1 C1 5500
+gui_marker_move -id  Wave.1 C1 4500
+gui_marker_move -id  Wave.1 C1 4021
+gui_marker_move -id  Wave.1 C1 4500
+gui_marker_move -id  Wave.1 C1 5500
+gui_marker_move -id  Wave.1 C1 13500
+gui_close_window -window TopLevel.2
+gui_list_select -id Hier.1 -current_item_name tb_aes -current_item_type Scope  -selected  {  }
+gui_list_expand -id  Hier.1   tb_aes
+gui_list_select -id Hier.1 -current_item_name tb_aes -current_item_type Scope  -selected  { tb_aes   }
+gui_use_schematics 
+gui_sch_show -name tb_aes
+gui_zoom -window Schematic.1 -rect { {-10665 -4101} {20698 14134} }
+gui_zoom -window Schematic.1 -rect { {-38096 -76129} {100742 4597} }
+gui_zoom -window Schematic.1 -rect { {-38096 -76129} {100742 4597} }
+gui_zoom -window Schematic.1 -rect { {-38096 -76129} {100742 4597} }
+gui_list_select -id Data.1 -selected  {  }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {tb_aes} {tb_aes.*p@62}
+gui_open_source -active tb_aes.*p@62 -activate
+gui_schematic_clear_selection -id Schematic.1
+gui_zoom -window Schematic.1 -fit
+gui_schematic_select -id Schematic.1 -type {cell} -parent {tb_aes} {tb_aes.*p@62}
+gui_schematic_select -id Schematic.1 -type {cell} -parent {tb_aes} {tb_aes.*p@62}
+gui_zoom -window Schematic.1 -fit
+gui_zoom -window Schematic.1 -rect { {-10181 -77289} {72662 -29120} }
+gui_zoom -window Schematic.1 -rect { {-10181 -62901} {72662 -14732} }
+gui_zoom -window Schematic.1 -rect { {-10181 -48513} {72662 -344} }
+gui_zoom -window Schematic.1 -rect { {-10181 -62901} {72662 -14732} }
+gui_zoom -window Schematic.1 -rect { {-10181 -77289} {72662 -29120} }
+gui_zoom -window Schematic.1 -rect { {-10181 -62901} {72662 -14732} }
+gui_zoom -window Schematic.1 -rect { {-10181 -48513} {72662 -344} }
+gui_zoom -window Schematic.1 -rect { {-10181 -43865} {72662 4303} }
+gui_zoom -window Schematic.1 -rect { {-10181 -58254} {72662 -10085} }
+gui_zoom -window Schematic.1 -rect { {-10181 -72642} {72662 -24473} }
+gui_zoom -window Schematic.1 -rect { {-10181 -58254} {72662 -10085} }
+gui_zoom -window Schematic.1 -rect { {-10181 -43865} {72662 4303} }
+gui_list_select -id Hier.1 -current_item_name tb_aes -current_item_type Scope  -selected  {  }
+gui_list_expand -id  Hier.1   tb_aes.dut
+gui_list_select -id Hier.1 -current_item_name tb_aes.dut -current_item_type Scope  -selected  { tb_aes.dut   }
+gui_use_schematics 
+gui_sch_show -name tb_aes.dut
+gui_zoom -window Schematic.2 -rect { {-10665 -4101} {20698 14134} }
+gui_zoom -window Schematic.2 -rect { {-199932 -270245} {276138 6564} }
+gui_zoom -window Schematic.2 -rect { {-199932 -270245} {276138 6564} }
+gui_zoom -window Schematic.2 -rect { {-199932 -270245} {276138 6564} }
+gui_list_select -id Hier.1 -current_item_name tb_aes.dut.cntx_top -current_item_type Scope  -selected  { tb_aes.dut.cntx_top   }
+gui_use_schematics 
+gui_sch_show -name tb_aes.dut.cntx_top
+gui_zoom -window Schematic.3 -rect { {-10665 -4101} {20698 14134} }
+gui_zoom -window Schematic.3 -rect { {-10748 -26704} {43562 4874} }
+gui_zoom -window Schematic.3 -rect { {-10748 -26704} {43562 4874} }
+gui_zoom -window Schematic.3 -rect { {-10748 -26704} {43562 4874} }
+gui_list_select -id Hier.1 -current_item_name {tb_aes.dut.genblk1[9].core_top} -current_item_type Scope  -selected  { {tb_aes.dut.genblk1[9].core_top}   }
+gui_use_schematics 
+gui_sch_show -name {tb_aes.dut.genblk1[9].core_top}
+gui_zoom -window Schematic.4 -rect { {-10665 -4101} {20698 14134} }
+gui_zoom -window Schematic.4 -rect { {-990 -48617} {97610 8714} }
+gui_zoom -window Schematic.4 -rect { {-990 -48617} {97610 8714} }
+gui_zoom -window Schematic.4 -rect { {-990 -48617} {97610 8714} }
+gui_zoom -window Schematic.2 -fit
+gui_zoom -window Schematic.2 -rect { {19995 -67604} {86980 -28656} }
+gui_zoom -window Schematic.2 -rect { {19995 -55971} {86980 -17022} }
+gui_zoom -window Schematic.2 -rect { {19995 -44337} {86980 -5389} }
+gui_zoom -window Schematic.2 -rect { {19995 -34220} {86980 4728} }
+gui_zoom -window Schematic.2 -rect { {19995 -45854} {86980 -6906} }
+gui_zoom -window Schematic.2 -rect { {19995 -57488} {86980 -18540} }
+gui_zoom -window Schematic.2 -rect { {19995 -69122} {86980 -30174} }
+gui_zoom -window Schematic.2 -rect { {19995 -80756} {86980 -41808} }
+gui_zoom -window Schematic.2 -rect { {19995 -92390} {86980 -53441} }
+gui_zoom -window Schematic.2 -rect { {19995 -104023} {86980 -65075} }
+gui_zoom -window Schematic.2 -rect { {19995 -115657} {86980 -76709} }
+gui_zoom -window Schematic.2 -rect { {19995 -127291} {86980 -88343} }
+gui_zoom -window Schematic.2 -rect { {19995 -138925} {86980 -99977} }
+gui_zoom -window Schematic.2 -rect { {19995 -150559} {86980 -111611} }
+gui_zoom -window Schematic.2 -rect { {19995 -162193} {86980 -123245} }
+gui_zoom -window Schematic.2 -rect { {19995 -173827} {86980 -134878} }
+gui_zoom -window Schematic.2 -rect { {19995 -185460} {86980 -146512} }
+gui_zoom -window Schematic.2 -rect { {19995 -197094} {86980 -158146} }
+gui_zoom -window Schematic.2 -rect { {19995 -208728} {86980 -169780} }
+gui_zoom -window Schematic.2 -rect { {19995 -220362} {86980 -181414} }
+gui_zoom -window Schematic.2 -rect { {19995 -231996} {86980 -193048} }
+gui_zoom -window Schematic.2 -rect { {19995 -243630} {86980 -204682} }
+gui_zoom -window Schematic.2 -rect { {19995 -255264} {86980 -216316} }
+gui_zoom -window Schematic.2 -rect { {19995 -266898} {86980 -227949} }
+gui_zoom -window Schematic.2 -rect { {19995 -268921} {86980 -229973} }
+gui_zoom -window Schematic.2 -rect { {19995 -257287} {86980 -218339} }
+gui_zoom -window Schematic.2 -rect { {19995 -245653} {86980 -206705} }
+gui_zoom -window Schematic.2 -rect { {19995 -234019} {86980 -195071} }
+gui_zoom -window Schematic.2 -rect { {19995 -222385} {86980 -183437} }
+gui_zoom -window Schematic.2 -rect { {19995 -210751} {86980 -171803} }
+gui_zoom -window Schematic.2 -rect { {19995 -199118} {86980 -160169} }
+gui_zoom -window Schematic.2 -rect { {19995 -187484} {86980 -148536} }
+gui_zoom -window Schematic.2 -rect { {19995 -175850} {86980 -136902} }
+gui_zoom -window Schematic.2 -rect { {19995 -164216} {86980 -125268} }
+gui_zoom -window Schematic.2 -rect { {19995 -152582} {86980 -113634} }
+gui_zoom -window Schematic.2 -rect { {19995 -140948} {86980 -102000} }
+gui_zoom -window Schematic.2 -rect { {19995 -129314} {86980 -90366} }
+gui_zoom -window Schematic.2 -rect { {19995 -117681} {86980 -78732} }
+gui_zoom -window Schematic.2 -rect { {19995 -106047} {86980 -67099} }
+gui_zoom -window Schematic.2 -rect { {19995 -94413} {86980 -55465} }
+gui_zoom -window Schematic.2 -rect { {19995 -82779} {86980 -43831} }
+gui_zoom -window Schematic.2 -rect { {19995 -71145} {86980 -32197} }
+gui_zoom -window Schematic.2 -rect { {19995 -59511} {86980 -20563} }
+gui_zoom -window Schematic.2 -rect { {19995 -47877} {86980 -8929} }
+gui_zoom -window Schematic.2 -rect { {19995 -36244} {86980 2705} }
+gui_zoom -window Schematic.2 -rect { {5760 -36244} {72745 2705} }

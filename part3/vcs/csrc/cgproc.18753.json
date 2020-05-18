@@ -1,0 +1,86 @@
+{
+    "Modules": {
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "aes_sbox": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "matrix_mult": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "tb_aes": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_18753_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_u0_obj.o",
+                    7381
+                ],
+                [
+                    "reYIK_u0_obj.o",
+                    35864
+                ],
+                [
+                    "JNxBW_u0_obj.o",
+                    70240
+                ],
+                [
+                    "Jn70n_u0_obj.o",
+                    21178
+                ],
+                [
+                    "Ekjwg_u0_obj.o",
+                    103965
+                ]
+            ],
+            "size": 238628
+        }
+    ],
+    "CompUnits": {
+        "JNxBW_u0_obj": {
+            "mod": "aes_sbox",
+            "out": "JNxBW_u0_obj.o",
+            "bytes": 70240,
+            "mode": 4,
+            "archive": "archive.0/_18753_archive_1.a"
+        },
+        "reYIK_u0_obj": {
+            "mod": "std",
+            "out": "reYIK_u0_obj.o",
+            "bytes": 35864,
+            "mode": 4,
+            "archive": "archive.0/_18753_archive_1.a"
+        },
+        "amcQw_u0_obj": {
+            "mod": "...MASTER...",
+            "out": "amcQw_u0_obj.o",
+            "bytes": 7381,
+            "mode": 4,
+            "archive": "archive.0/_18753_archive_1.a"
+        },
+        "Jn70n_u0_obj": {
+            "mod": "matrix_mult",
+            "out": "Jn70n_u0_obj.o",
+            "bytes": 21178,
+            "mode": 4,
+            "archive": "archive.0/_18753_archive_1.a"
+        },
+        "Ekjwg_u0_obj": {
+            "mod": "tb_aes",
+            "out": "Ekjwg_u0_obj.o",
+            "bytes": 103965,
+            "mode": 4,
+            "archive": "archive.0/_18753_archive_1.a"
+        }
+    }
+}

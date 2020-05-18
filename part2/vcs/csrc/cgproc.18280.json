@@ -1,0 +1,101 @@
+{
+    "Modules": {
+        "tb_aes": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "aes_sbox": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "AESCore": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "matrix_mult": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "smeNF_u0_obj": {
+            "bytes": 44695,
+            "out": "smeNF_u0_obj.o",
+            "mod": "AESCore",
+            "archive": "archive.0/_18280_archive_1.a",
+            "mode": 4
+        },
+        "amcQw_u0_obj": {
+            "bytes": 7381,
+            "out": "amcQw_u0_obj.o",
+            "mod": "...MASTER...",
+            "archive": "archive.0/_18280_archive_1.a",
+            "mode": 4
+        },
+        "Ekjwg_u0_obj": {
+            "bytes": 133724,
+            "out": "Ekjwg_u0_obj.o",
+            "mod": "tb_aes",
+            "archive": "archive.0/_18280_archive_1.a",
+            "mode": 4
+        },
+        "JNxBW_u0_obj": {
+            "bytes": 70240,
+            "out": "JNxBW_u0_obj.o",
+            "mod": "aes_sbox",
+            "archive": "archive.0/_18280_archive_1.a",
+            "mode": 4
+        },
+        "reYIK_u0_obj": {
+            "bytes": 35864,
+            "out": "reYIK_u0_obj.o",
+            "mod": "std",
+            "archive": "archive.0/_18280_archive_1.a",
+            "mode": 4
+        },
+        "Jn70n_u0_obj": {
+            "bytes": 21178,
+            "out": "Jn70n_u0_obj.o",
+            "mod": "matrix_mult",
+            "archive": "archive.0/_18280_archive_1.a",
+            "mode": 4
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_18280_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_u0_obj.o",
+                    7381
+                ],
+                [
+                    "reYIK_u0_obj.o",
+                    35864
+                ],
+                [
+                    "JNxBW_u0_obj.o",
+                    70240
+                ],
+                [
+                    "Jn70n_u0_obj.o",
+                    21178
+                ],
+                [
+                    "smeNF_u0_obj.o",
+                    44695
+                ],
+                [
+                    "Ekjwg_u0_obj.o",
+                    133724
+                ]
+            ],
+            "size": 313082
+        }
+    ]
+}

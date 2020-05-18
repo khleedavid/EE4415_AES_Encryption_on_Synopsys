@@ -1,0 +1,168 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file results.vpd} {gui_open_db -file /class4/ug19/a168625w/ee4415_part2/part3/vcs/results.vpd -design V2} {gui_open_db -file /class4/ug19/a168625w/ee4415_part2/part1/vcs/results.vpd -design V4} {gui_open_db -file /class4/ug19/a168625w/ee4415_part2/part2/vcs/results.vpd -design V3} {gui_open_db -file /class4/ug19/a168625w/ee4415_part2/part1/vcs/results.vpd -design V2}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1535
+gui_set_state_value -category Layout -key child_console_size_y -value 106
+gui_set_state_value -category Layout -key child_data_coltype -value 68
+gui_set_state_value -category Layout -key child_data_colvalue -value 10
+gui_set_state_value -category Layout -key child_data_colvariable -value 172
+gui_set_state_value -category Layout -key child_data_size_x -value 259
+gui_set_state_value -category Layout -key child_data_size_y -value 635
+gui_set_state_value -category Layout -key child_driver_size_x -value 1260
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 115
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 25
+gui_set_state_value -category Layout -key child_hier_size_x -value 149
+gui_set_state_value -category Layout -key child_hier_size_y -value 635
+gui_set_state_value -category Layout -key child_hier_sort_order -value 1
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1130
+gui_set_state_value -category Layout -key child_schematic_size_y -value 630
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 923
+gui_set_state_value -category Layout -key child_source_size_y -value 603
+gui_set_state_value -category Layout -key child_wave_colname -value 211
+gui_set_state_value -category Layout -key child_wave_colvalue -value 211
+gui_set_state_value -category Layout -key child_wave_left -value 427
+gui_set_state_value -category Layout -key child_wave_right -value 1040
+gui_set_state_value -category Layout -key main_pos_x -value 0
+gui_set_state_value -category Layout -key main_pos_y -value 23
+gui_set_state_value -category Layout -key main_size_x -value 1535
+gui_set_state_value -category Layout -key main_size_y -value 863
+gui_set_state_value -category Layout -key stand_schematic_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_schematic_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_schematic_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_schematic_child_size_x -value 1028
+gui_set_state_value -category Layout -key stand_schematic_child_size_y -value 447
+gui_set_state_value -category Layout -key stand_schematic_top_pos_x -value 86
+gui_set_state_value -category Layout -key stand_schematic_top_pos_y -value 109
+gui_set_state_value -category Layout -key stand_schematic_top_size_x -value 1109
+gui_set_state_value -category Layout -key stand_schematic_top_size_y -value 684
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1477
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 676
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 28
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 51
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1500
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 831
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file results.vpd
+gui_list_expand -id  Hier.1   tb_aes
+gui_list_expand -id  Hier.1   tb_aes.dut
+gui_list_select -id Hier.1 -current_item_name tb_aes.dut.core_top -current_item_type Scope  -selected  { tb_aes.dut.core_top   }
+gui_use_schematics 
+gui_sch_show -name tb_aes.dut.core_top
+gui_zoom -window Schematic.1 -rect { {-12207 -4093} {22206 14123} }
+gui_zoom -window Schematic.1 -rect { {-15063 -65801} {117704 4481} }
+gui_zoom -window Schematic.1 -rect { {-15063 -65801} {117704 4481} }
+gui_zoom -window Schematic.1 -rect { {-15063 -65801} {117704 4481} }
+gui_close_window -window DLPane.1
+gui_zoom -window Schematic.1 -full
+gui_zoom -window Schematic.1 -rect { {-30535 -65801} {133296 4481} }
+gui_list_select -id Hier.1 -current_item_name tb_aes.dut.cntx_top -current_item_type Scope  -selected  { tb_aes.dut.cntx_top   }
+gui_use_schematics 
+gui_sch_show -name tb_aes.dut.cntx_top
+gui_zoom -window Schematic.2 -rect { {-16217 -4093} {26247 14123} }
+gui_zoom -window Schematic.2 -rect { {-23971 -29777} {56810 4877} }
+gui_zoom -window Schematic.2 -rect { {-23971 -29777} {56810 4877} }
+gui_zoom -window Schematic.2 -rect { {-23971 -29777} {56810 4877} }
+package require snpsMisc; ::Misc::exec_method -method moveUpCmd 
+gui_sch_viewport_backup -id Schematic.2 -type save
+gui_sch_show -window Schematic.2 -name tb_aes.dut
+gui_zoom -window Schematic.2 -rect { {-25346 -39683} {78685 4945} }
+gui_zoom -window Schematic.2 -rect { {-25346 -39683} {78685 4945} }
+gui_sch_viewport_backup -id Schematic.2 -type restore -action out -cell tb_aes.dut.cntx_top -pins {} -slct_targets global
+gui_schematic_select -id Schematic.2 -type {cell} -parent {tb_aes.dut} {tb_aes.dut.cntx_top}
+gui_schematic_select -id Schematic.2 -type {cell} -parent {tb_aes.dut} {tb_aes.dut.cntx_top}
+gui_schematic_select -id Schematic.2 -type {cell} -parent {tb_aes.dut} {tb_aes.dut.core_top}
+gui_use_schematics 
+gui_sch_show -name tb_aes.dut.core_top
+gui_schematic_select -id Schematic.2 -type {cell} -parent {tb_aes.dut} {tb_aes.dut.core_top}
+gui_zoom -window Schematic.3 -rect { {-16217 -4093} {26247 14123} }
+gui_zoom -window Schematic.3 -rect { {-30535 -65801} {133296 4481} }
+gui_zoom -window Schematic.3 -rect { {-30535 -65801} {133296 4481} }
+gui_zoom -window Schematic.3 -rect { {-30535 -65801} {133296 4481} }
+gui_open_db -file /class4/ug19/a168625w/ee4415_part2/part3/vcs/results.vpd -design V2
+gui_list_expand -id  Hier.1   V2:tb_aes
+gui_use_schematics 
+gui_sch_show -name V2:tb_aes
+gui_zoom -window Schematic.4 -rect { {-16217 -4093} {26247 14123} }
+gui_zoom -window Schematic.4 -rect { {-16217 -4093} {26247 14123} }
+gui_zoom -window Schematic.4 -rect { {-35829 -51390} {94170 4379} }
+gui_zoom -window Schematic.4 -rect { {-35829 -51390} {94170 4379} }
+gui_schematic_select -id Schematic.4 -type {cell} -parent {V2:tb_aes} {V2:tb_aes.dut}
+gui_schematic_select -id Schematic.4 -type {cell} -parent {V2:tb_aes} {V2:tb_aes.dut}
+gui_sch_viewport_backup -id Schematic.4 -type save
+gui_sch_show -window Schematic.4 -name V2:tb_aes.dut
+gui_zoom -window Schematic.4 -rect { {-22777 -36596} {74006 4923} }
+gui_zoom -window Schematic.4 -rect { {-22777 -36596} {74006 4923} }
+gui_sch_viewport_backup -id Schematic.4 -type restore -action in -pins {} -slct_targets global
+gui_schematic_clear_selection -id Schematic.4
+gui_schematic_select -id Schematic.4 -type {cell} -parent {V2:tb_aes.dut} {V2:tb_aes.dut.cntx_top}
+gui_sch_viewport_backup -id Schematic.4 -type save
+gui_sch_show -window Schematic.4 -name V2:tb_aes.dut.cntx_top
+gui_zoom -window Schematic.4 -rect { {-22911 -41739} {84437 4312} }
+gui_zoom -window Schematic.4 -rect { {-22911 -41739} {84437 4312} }
+gui_sch_viewport_backup -id Schematic.4 -type restore -action in -pins {} -slct_targets global
+gui_schematic_clear_selection -id Schematic.4
+package require snpsMisc; ::Misc::exec_method -method moveUpCmd 
+gui_sch_viewport_backup -id Schematic.4 -type save
+gui_sch_show -window Schematic.4 -name V2:tb_aes.dut
+gui_zoom -window Schematic.4 -rect { {-22777 -36596} {74006 4923} }
+gui_zoom -window Schematic.4 -rect { {-22777 -36596} {74006 4923} }
+gui_sch_viewport_backup -id Schematic.4 -type restore -action out -cell V2:tb_aes.dut.cntx_top -pins {} -slct_targets global
+gui_zoom -window Schematic.4 -rect { {-22777 -36596} {74008 4924} }
+gui_schematic_select -id Schematic.4 -type {cell} -parent {V2:tb_aes.dut} {V2:tb_aes.dut.cntx_top}
+gui_schematic_select -id Schematic.4 -type {cell} -parent {V2:tb_aes.dut} {V2:tb_aes.dut.cntx_top}
+gui_schematic_select -id Schematic.4 -type {cell} -parent {V2:tb_aes.dut} {V2:tb_aes.dut.core_top}
+gui_sch_viewport_backup -id Schematic.4 -type save
+gui_sch_show -window Schematic.4 -name V2:tb_aes.dut.core_top
+gui_zoom -window Schematic.4 -rect { {-12181 -61687} {143493 5096} }
+gui_zoom -window Schematic.4 -rect { {-12181 -61687} {143493 5096} }
+gui_sch_viewport_backup -id Schematic.4 -type restore -action in -pins {} -slct_targets global
+gui_schematic_clear_selection -id Schematic.4
+gui_schematic_select -id Schematic.4 -type {net} -parent {V2:tb_aes.dut.core_top} {V2:tb_aes.dut.core_top.buffer_cipher_comb}
+gui_zoom -window Schematic.4 -fit
+gui_zoom -window Schematic.4 -rect { {28919 -66836} {133093 -22146} }
+gui_zoom -window Schematic.4 -rect { {28919 -53490} {133093 -8800} }
+gui_zoom -window Schematic.4 -rect { {28919 -40144} {133093 4545} }
+gui_zoom -window Schematic.4 -rect { {28919 -39839} {133093 4850} }
+gui_zoom -window Schematic.4 -rect { {28919 -53185} {133093 -8495} }
+gui_zoom -window Schematic.4 -rect { {28919 -66531} {133093 -21841} }
+gui_zoom -window Schematic.4 -rect { {28919 -53185} {133093 -8495} }
+gui_schematic_select -id Schematic.4 -type {net} -parent {V2:tb_aes.dut.core_top} {V2:tb_aes.dut.core_top.buffer_text_A_comb}
+gui_zoom -window Schematic.4 -fit
+gui_zoom -window Schematic.4 -rect { {9697 -56797} {133935 -3501} }
+gui_schematic_select -id Schematic.4 -type {net} -parent {V2:tb_aes.dut.core_top} {V2:tb_aes.dut.core_top.buffer_text_E}
+gui_zoom -window Schematic.4 -fit
+gui_zoom -window Schematic.4 -rect { {54062 -23545} {99596 -4012} }
+gui_zoom -window Schematic.4 -rect { {54578 -30987} {118971 -3362} }
+gui_zoom -window Schematic.4 -rect { {59129 -43745} {150196 -4678} }
+gui_schematic_select -id Schematic.4 -type {net} -parent {V2:tb_aes.dut.core_top} {V2:tb_aes.dut.core_top.clk}
+gui_schematic_clear_selection -id Schematic.4
+gui_schematic_select -id Schematic.4 -type {net} -parent {V2:tb_aes.dut.core_top} {V2:tb_aes.dut.core_top.buffer_text_A_comb}
+gui_zoom -window Schematic.4 -fit
+gui_zoom -window Schematic.4 -rect { {9690 -56801} {133843 -3540} }
+gui_zoom -window Schematic.4 -rect { {9690 -48348} {133843 4912} }
+gui_schematic_select -id Schematic.4 -type {net} -parent {V2:tb_aes.dut.core_top} {V2:tb_aes.dut.core_top.buffer_CT_ip0}
+gui_zoom -window Schematic.4 -rect { {67600 -19732} {131041 7483} }

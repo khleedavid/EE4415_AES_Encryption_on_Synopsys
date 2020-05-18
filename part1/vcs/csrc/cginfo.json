@@ -1,0 +1,59 @@
+{
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "aes_sbox": [
+            "aes_sbox",
+            "JNxBW",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "tb_aes": [
+            "tb_aes",
+            "Ekjwg",
+            "module"
+        ],
+        "matrix_mult": [
+            "matrix_mult",
+            "Jn70n",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "CompileStatus": "Successful",
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 92999
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CurCompileModules": [
+        "...MASTER...",
+        "std",
+        "aes_sbox",
+        "matrix_mult",
+        "tb_aes"
+    ],
+    "CompileProcesses": [
+        "cgproc.14680.json"
+    ],
+    "PEModules": [],
+    "Misc": {
+        "cwd": "/class4/ug19/a168625w/ee4415_part2/part1/vcs",
+        "csrc": "csrc",
+        "archive_dir": "archive.0",
+        "default_output_dir": "csrc",
+        "csrc_abs": "/class4/ug19/a168625w/ee4415_part2/part1/vcs/csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/class4/ug19/a168625w/ee4415_part2/part1/vcs/simv.daidir"
+    }
+}

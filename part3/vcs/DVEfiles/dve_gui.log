@@ -1,0 +1,87 @@
+The file 'results.vpd' was opened successfully.
+db'
+Loading db file '/app11/synopsys/vcs_vJ-2014.12/gui/dve/libraries/syn/generic.sLoading db file '/app11/synopsys/vcs_vJ-2014.12/gui/dve/libraries/syn/vcs.sdb'
+Loading db file '/app11/synopsys/vcs_vJ-2014.12/gui/dve/libraries/syn/vcs.sdb'
+Loading db file '/app11/synopsys/vcs_vJ-2014.12/gui/dve/libraries/syn/vcs.sdb'
+db'
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+With selected criteria, DVE has found 'results at time 6500
+    tb_aes.dut.core_top.accept'.
+With selected criteria, DVE has found 'results at time 46500
+    tb_aes.dut.core_top.accept'.
+With selected criteria, DVE has found 'results at time 42500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 38500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 34500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 30500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 26500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 22500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 26500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 30500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 34500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 38500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 42500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 46500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 50500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 42500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 38500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 34500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 30500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 26500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 22500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 18500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 14500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 10500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 9500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 8500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 7500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 5500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 3500
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+With selected criteria, DVE has found 'results at time 0
+    tb_aes.dut.core_top.cipher_text[127:0]'.
+Warning: [DVWW009] 
+Seek hit time zero with no more matches.
+Warning: [DVWW009] 
+Seek hit time zero with no more matches.
+dve> 
+dve> 
+dve> 
